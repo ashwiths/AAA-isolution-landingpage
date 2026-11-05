@@ -104,7 +104,7 @@ export default function Connect() {
             rel={s.href.startsWith("http") ? "noreferrer" : undefined}
           >
             <span className={styles.glyph}>
-              {"mark" in s ? MARKS[s.mark] : s.glyph}
+              {MARKS[s.mark]}
             </span>
             <span className={styles.roll}>
               <span>{s.name}</span>
